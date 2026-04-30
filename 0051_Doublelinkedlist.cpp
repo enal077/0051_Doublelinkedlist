@@ -69,3 +69,7 @@ public:
 
         current->next = nodeBaru;
     }
+
+    void hapus()
+    {
+        
