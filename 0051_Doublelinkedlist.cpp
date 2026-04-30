@@ -154,3 +154,6 @@ public:
         cout << endl;
     }
 
+         void searchData()
+    {
+        
