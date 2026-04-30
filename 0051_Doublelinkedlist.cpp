@@ -145,3 +145,12 @@ public:
             currentNode = currentNode->next;
         }
 
+        cout << "Records in descending order of roll number are:\n";
+        while (currentNode != NULL)
+        {
+            cout << currentNode->noMhs << " ";
+            currentNode = currentNode->prev;
+        }
+        cout << endl;
+    }
+
