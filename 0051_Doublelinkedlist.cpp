@@ -72,4 +72,8 @@ public:
 
     void hapus()
     {
-        
+        if (START == NULL)
+        {
+            cout << "List is empty" << endl;
+            return;
+        }
