@@ -156,4 +156,10 @@ public:
 
          void searchData()
     {
+        if (START == NULL)
+        {
+            cout << "List is empty" << endl;
+            return;
+        }
+
         
