@@ -137,3 +137,11 @@ public:
             cout << "List is empty" << endl;
             return;
         }
+
+        Node *currentNode = START;
+
+        while (currentNode->next != NULL)
+        {
+            currentNode = currentNode->next;
+        }
+
