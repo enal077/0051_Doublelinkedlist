@@ -120,3 +120,12 @@ public:
         }
 
         Node *currentNode = START;
+
+        cout << "Records in ascending order of roll number are:\n";
+        while (currentNode != NULL)
+        {
+            cout << currentNode->noMhs << " ";
+            currentNode = currentNode->next;
+        }
+        cout << endl;
+    }
