@@ -77,3 +77,36 @@ public:
             cout << "List is empty" << endl;
             return;
         }
+
+        int rollNo;
+        cout << "Enter the roll number of the student whose record is to be deleted: ";
+        cin >> rollNo;
+
+        Node *current = START;
+
+        while (current != NULL && current->noMhs != rollNo)
+            current = current->next;
+
+        if (current == NULL)
+        {
+            cout << "Record not found" << endl;
+            return;
+        }
+
+        if (current == START)
+        {
+            START = current->next;
+            if (START != NULL)
+                START->prev = NULL;
+        }
+        else
+        {
+            if (current->next != NULL)
+                current->next->prev = current->prev;
+
+            current->prev->next = current->next;
+        }
+
+        delete current;
+        cout << "Record with roll number " << rollNo << " deleted" << endl;
+    }
